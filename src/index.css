@@ -1,42 +1,68 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
-    background-color: #f5f6f5;
 }
 
-.parent-div {
-    background-color: rgb(100, 60, 67);
-    width: 60%;
-    height: 60vh;
-    margin: auto;
-    border-radius: 5px;
-    padding: 30px;   
+body {
+    margin: 0;
+    background-color: #0b2434;
+    padding: 20px;
 }
 
-.child-div {
-    width: 80%;
-    height: 50vh;
+main {
+    background-color: #f5f5f5;
+    height: 400px;
+    max-width: 800px;
     margin: auto;
-    background-color: #DACFBC;
     border-radius: 5px;
-    text-align: center;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-around;
 }
 
-.title {
-    background-color: inherit;
+.dice-container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 50px;
 }
 
-.description {
-    background-color: inherit;
+.die-face {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.roll-btn {
-    width: 10%;
-    height: 5vh;
-    margin: auto;
-    border-radius: 4px;
-    background-color: #B0D9E7;
+.die-num {
+    font-size: 2rem;
+}
+
+.roll-dice {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035ff;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.roll-dice:focus {
+    outline: none;
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.green {
+    background-color: green;
 }
