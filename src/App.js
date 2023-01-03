@@ -70,6 +70,8 @@ export default function App() {
     return (
      <main>
         {tenzies && <Confetti/>}
+        <h1 className='title'>Welcome to Tenzies</h1>
+        <p className='instructions'>Roll untill all numbers are the same</p>
         <div className='dice-container'>
             {diceElements}
         </div>
